@@ -2,7 +2,6 @@ module.exports = {
   mode: "jit",
   content: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
   theme: {
-    extend: {},
     colors: {
       "bye-white": "#ffffff",
       "bye-black": "#000000",
@@ -14,6 +13,8 @@ module.exports = {
         200: "#665F52",
       },
     },
-    plugins: [],
+    fontFamily: {
+      GeoSans: ["GeoSansLight", "sans-serif"],
+    },
   },
 };
