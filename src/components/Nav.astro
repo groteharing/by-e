@@ -1,8 +1,8 @@
 <!-- Navigation -->
-    <nav class="bg-bye-white" x-data="{navigationOpen: false}">
+    <nav class="absolute top-0" x-data="{navigationOpen: false}">
       <!-- Nav container -->
       <div
-        class="relative flex flex-col px-8 py-10 z-40 lg:px-16"
+        class="relative flex flex-col px-8 py-10 z-50 lg:px-16"
       >
         <!-- Logo -->
         <div class="w-100 flex flex-row justify-between items-center ">
@@ -39,9 +39,10 @@
       </div>
       <!-- Nav menu -->
       <div class="w-screen h-screen fixed top-0 left-0 z-10 bg-bye-earth opacity-5" @click.away="navigationOpen = false" 
-        x-show="navigationOpen"></div>
+        x-show="navigationOpen"
+      ></div>
       <div
-        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white absolute top-0 right-0 bottom-0 left-0 px-8 py-8 z-10 lg:left-auto lg:w-2/6 md:drop-shadow-xl"
+        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 lg:left-auto lg:w-2/6 md:drop-shadow-"
         @click.away="navigationOpen = false" 
         x-show="navigationOpen"
       >

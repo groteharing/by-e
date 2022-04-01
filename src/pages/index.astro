@@ -30,9 +30,20 @@ let title = "By Elements";
   <body>
     <Nav />
     <main>
-      <hero class="h-40 w-screen bg-bye-taupe-200">
-        <p>hallooo</p>
+      <hero
+        class="w-screen h-screen relative flex flex-col justify-center items-center"
+      >
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-bye-grey z-0"
+        >
+        </div>
+        <div class="relative z-10 p-10">
+          <h2 class="text-4xl leading-relaxed text-center">
+            Modern shapes combined with traditional Indonesian craftsmanship.
+          </h2>
+        </div>
       </hero>
+      <div class="h-40"></div>
     </main>
   </body>
 </html>
