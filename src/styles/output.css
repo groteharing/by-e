@@ -602,8 +602,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-35v {
+  height: 35vh;
+}
+
+.h-30v {
+  height: 30vh;
+}
+
+.h-40v {
+  height: 40vh;
 }
 
 .min-h-full {
@@ -642,8 +650,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
