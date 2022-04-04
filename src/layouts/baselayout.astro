@@ -1,0 +1,22 @@
+---
+// Style Imports
+import "/src/styles/global.css";
+import "/src/styles/output.css";
+
+let title = "By Elements";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <script
+    src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+    defer
+  >
+  </script>
+</head><!-- /. head-->
+<body>
+  <slot />
+</body>

@@ -1,0 +1,232 @@
+---
+// Style Imports
+import "../styles/global.css";
+import "../styles/output.css";
+// Component Imports
+import Nav from "../components/Nav.astro";
+import Catalogue from "../components/Catalogue.astro";
+import Footer from "../components/Footer.astro";
+
+// You can import components from any supported Framework here!
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = "By Elements";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    >
+    </script>
+  </head><!-- /. head-->
+  <body>
+    <!-- <Nav /> -->
+    <main>
+      <hero class="w-screen h-screen flex flex-col justify-end">
+        <div
+          class="text-container flex flex-col
+               space-y-4 px-6 py-10"
+        >
+          <h3>Why work with us?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a
+            href="#"
+            class="flex flex-row items-center hover:text-bye-taupe-50 group"
+            >Read more
+            <svg
+              class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+              width="100%"
+              height="100%"
+              viewBox="0 0 26 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                fill="currentColor"></path>
+            </svg></a
+          >
+        </div><!-- /. text wrap -->
+        <div
+          class="image-container flex flex-row justify-center items-start object-cover h-40v w-full overflow-hidden"
+        >
+          <img src="/assets/img/home-person.jpg" alt="" />
+        </div><!-- /. img wrap -->
+      </hero>
+      <!-- /. hero  -->
+      <div class="main-wrapper space-y-20 my-20">
+        <section class="introduction-section w-full">
+          <div class="container">
+            <div class="wrapper-grid grid gap-20 w-full">
+              <div class="grid-item">
+                <img src="/assets/img/wwu-scene-1.jpg" alt="" class="hidden" />
+                <div class="text-wrap px-6 space-y-4">
+                  <h3>
+                    We are an international company: European origin based in
+                    Indonesia
+                  </h3>
+                  <p>
+                    We operate in different areas and cultures. Being a fusion
+                    of a European and an Indonesian company and also living and
+                    having customers and shops internationally makes us aware of
+                    the different cultures and values on both ends of the world.
+                    We can look from both the International as well as the local
+                    perspective and from both the production as well as the
+                    consumer’s point of view. This smoothens many layers in
+                    design, communication, logistics and production.
+                  </p>
+                </div>
+              </div><!-- /. grid-item -->
+              <div class="grid-item flex flex-row-reverse w-full">
+                <div
+                  class="w-1/4 h-full bg-bye-black flex flex-row justify-center items-center"
+                >
+                  <img
+                    src="/assets/img/home-handcraft.jpg"
+                    alt=""
+                    class="h-full object-cover"
+                  />
+                </div>
+                <div class="text-wrap px-6 space-y-4 w-3/4">
+                  <h3>Our production takes place in our Elements Factory</h3>
+                  <p>
+                    ByE works together with Elements Factory based in Indonesia.
+                    Therefore it can control its development and production
+                    processes and implement its own vision and values. We are
+                    there from the initial design until the finished product.
+                    Our skillful team members work closely together with the
+                    craftsmen to get the right products. Being present at the
+                    source gives us control over every step in the process; from
+                    the sourcing of materials all the way through the production
+                    process.
+                  </p>
+                </div>
+              </div><!-- /. grid-item -->
+              <div class="grid-item space-y-6">
+                <div
+                  class="flex flex-row justify-center items-center h-40v overflow-hidden"
+                >
+                  <img
+                    src="/assets/img/wwu-scene-2.jpg"
+                    alt=""
+                    class="w-full object-cover"
+                  />
+                </div>
+                <div class="text-wrap px-6 space-y-4">
+                  <h3>Updated collection every year</h3>
+                  <p>
+                    ByE develops and launches a new collection every year with
+                    fresh items. The collection takes  into account and
+                    incorporates the worldwide interior trends whilst keeping
+                    its own authentic and recognizable style. We display the new
+                    collection at the international furniture fair and send our
+                    loyal customers a catalog before displaying the new
+                    collection at the fair.
+                  </p>
+                </div>
+              </div><!-- /. grid-item -->
+              <div class="grid-item flex flex-col w-full space-y-20">
+                <div class="grid-sub-item flex flex-row-reverse">
+                  <div
+                    class="w-1/4 h-full bg-bye-black flex flex-row justify-center items-center"
+                  >
+                    <img
+                      src="/assets/img/wwu-craft.jpg"
+                      alt=""
+                      class="h-full object-cover"
+                    />
+                  </div>
+                  <div class="text-wrap px-6 space-y-4 w-3/4">
+                    <h3>Experience is what we’re known for</h3>
+                    <p>
+                      Bastiaan has already been designing and producing ‘white
+                      label furniture’  for renowned and successful
+                      international furniture brands for years. The extensive
+                      experience of developing and producing for other brands
+                      has enabled us to see that our designs and products are
+                      very well received by end consumers in many different
+                      countries and markets.
+                    </p>
+                  </div>
+                </div><!-- /.sub item-->
+                <div class="grid-sub-item flex">
+                  <div
+                    class="w-1/4 h-full flex flex-row justify-center items-center"
+                  >
+                    <img
+                      src="/assets/img/wwu-scene-3.jpg"
+                      alt=""
+                      class="h-full object-cover"
+                    />
+                  </div>
+                  <div class="text-wrap px-6 space-y-4 w-3/4">
+                    <h3>Relatively low MOQ’s per product</h3>
+                    <p>
+                      Because our products are crafted by hand we have
+                      relatively low minimum order requirements for our product
+                      categories. This makes it easier to choose a variety of
+                      different products to fill up a single container.
+                    </p>
+                  </div>
+                </div><!-- /.sub item-->
+              </div><!-- /. grid-item with sub items -->
+              <div class="grid-item space-y-6">
+                <div class="text-wrap px-6 space-y-4">
+                  <q class="text-2xl">
+                    ByE keeps up and implements the modern trends, ensuring that
+                    the collection appeals to the target audience.
+                  </q>
+                </div>
+              </div><!-- /. grid-item -->
+              <div class="grid-item space-y-6">
+                <div
+                  class="flex flex-row justify-center items-center h-40v overflow-hidden"
+                >
+                  <img
+                    src="/assets/img/wwu-scene-4.jpg"
+                    alt=""
+                    class="w-full object-cover"
+                  />
+                </div>
+                <div class="text-wrap px-6 space-y-4">
+                  <h3>
+                    Our collection consists of a broad range of different
+                    products and combinations of materials
+                  </h3>
+                  <p>
+                    ByE works together with Elements Factory based in Indonesia.
+                    Therefore it can control its development and production
+                    processes and implement its own vision and values. We are
+                    there from the initial design until the finished product.
+                    Our skillful team members work closely together with the
+                    craftsmen to get the right products. Being present at the
+                    source gives us control over every step in the process; from
+                    the sourcing of materials all the way through the production
+                    process.
+                  </p>
+                </div>
+              </div><!-- /. grid-item -->
+              <!-- /. wrapper-grid -->
+            </div>
+            <!-- /. container-->
+          </div>
+        </section>
+        <!-- /. introduction section -->
+        <Catalogue />
+      </div><!-- /.main wrapper -->
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,34 +1,13 @@
 ---
-// Style Imports
-import "../styles/global.css";
-import "../styles/output.css";
-// Component Imports
-import Nav from "../components/Nav.astro";
+import baselayout from "../layouts/baselayout.astro";
+import Catalogue from "../components/Catalogue.astro";
 import Footer from "../components/Footer.astro";
-
-// You can import components from any supported Framework here!
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = "By Elements";
+import Nav from "../components/Nav.astro";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    >
-    </script>
-  </head><!-- /. head-->
-  <body>
-    <!-- <Nav /> -->
+  <baselayout>
+    <Nav />
     <main>
       <hero
         class="w-screen h-screen relative flex flex-col justify-center items-center"
@@ -112,7 +91,7 @@ let title = "By Elements";
           </div>
           <!-- /. container-->
         </section>
-        <!-- /. mobile only section -->
+        <!-- /. section-mobile-only -->
 
         <section class="introduction-section w-full">
           <div class="container">
@@ -191,43 +170,9 @@ let title = "By Elements";
           </div>
           <!-- /. container-->
         </section>
-        <!-- /. introduction section -->
+        <!-- /. section-introduction -->
 
-        <section class="home-catalogue w-full px-6">
-          <div class="container bg-bye-earth-red text-bye-white">
-            <div class="flex flex-col">
-              <div class="image-container">
-                <img src="/assets/img/home-catalogue.jpg" alt="" />
-              </div>
-              <div class="text-container space-y-4 px-6 py-10">
-                <h3>See the full collection in our catalogue</h3>
-                <p>
-                  In our catalogue you will see our most recent range of
-                  furniture and accessories that you can order and brand with
-                  your own label.
-                </p>
-                <a
-                  href="."
-                  class="flex flex-row items-center hover:text-bye-taupe-50 group"
-                  >Go to our catalogue
-                  <svg
-                    class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 26 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
-                      fill="currentColor"></path>
-                  </svg></a
-                >
-              </div>
-            </div>
-          </div><!-- /. container-->
-        </section>
-        <!-- /. catalogue section-->
+        <Catalogue />
 
         <section class="home-our-story w-full px-6">
           <div class="container">
@@ -266,18 +211,17 @@ let title = "By Elements";
             </div>
           </div><!-- /. container-->
         </section>
-        <!-- /. section our story -->
+        <!-- /. section-our-story -->
 
-        <section class="home-outro w-full">
+        <section class="section-home-outro w-full">
           <div class="container">
             <img class="w-full" src="assets/img/home-rugs.jpg" alt="" />
           </div>
           <!-- /.container -->
         </section>
-        <!-- /. home outro -->
-      </div>
-      <!-- /. main wrapper -->
+        <!-- /. section-home-outro -->
+      </div><!-- /.main wrapper-->
     </main>
     <Footer />
-  </body>
+  </baselayout>
 </html>
