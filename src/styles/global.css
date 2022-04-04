@@ -20,6 +20,12 @@
   h4 {
     @apply text-xl;
   }
+  p, body {
+    @apply leading-loose
+  }
+  .a-line {
+    @apply hover:underline;
+  }
 }
 
 /*!

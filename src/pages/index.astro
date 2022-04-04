@@ -3,8 +3,9 @@
 import "../styles/global.css";
 import "../styles/output.css";
 // Component Imports
-import Tour from "../components/Tour.astro";
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
 // You can import components from any supported Framework here!
 
 // Component Script:
@@ -25,14 +26,13 @@ let title = "By Elements";
       defer
     >
     </script>
-  </head><!-- #end head-->
+  </head><!-- /. head-->
   <body>
     <!-- <Nav /> -->
     <main>
       <hero
         class="w-screen h-screen relative flex flex-col justify-center items-center"
       >
-        <!-- Left side wrapper -->
         <div
           class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-bye-grey z-0 flex flex-row items-center justify-center"
         >
@@ -42,7 +42,8 @@ let title = "By Elements";
             alt=""
           />
         </div>
-        <!-- Right side wrapper -->
+        <!-- /. Left side wrapper -->
+
         <div
           class="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center z-10 p-10"
         >
@@ -50,7 +51,7 @@ let title = "By Elements";
             <h2 class="leading-relaxed text-center pb-6">
               Modern shapes combined with traditional Indonesian craftsmanship.
             </h2>
-            <a href="#">
+            <a href="#hero-extend">
               <svg
                 class="w-8 h-8 text-bye-white m-auto"
                 width="100%"
@@ -78,19 +79,21 @@ let title = "By Elements";
               </svg>
             </a>
           </div>
-        </div><!-- #end container-->
-      </hero><!-- #end hero  -->
-
+        </div>
+        <!-- /. Right side wrapper -->
+        <!-- /. container-->
+      </hero>
+      <!-- /. hero  -->
       <div class="main-wrapper space-y-20">
-        <section class="mobile-only-section w-full">
+        <section id="hero-extend" class="mobile-only-section w-full">
           <div class="container px-6 py-12 space-y-4">
-            <p class="leading-loose">
+            <p>
               A collection full of contemporary, complete and fresh products
               that customers can buy and resell under their own brand. The style
               is natural, handcrafted and calm
             </p>
             <a
-              href="#"
+              href="."
               class="flex flex-row items-center hover:text-bye-taupe-200 group"
               >Why by from us?
               <svg
@@ -106,8 +109,10 @@ let title = "By Elements";
                   fill="currentColor"></path>
               </svg></a
             >
-          </div><!-- #end container-->
-        </section><!-- #end mobile only section -->
+          </div>
+          <!-- /. container-->
+        </section>
+        <!-- /. mobile only section -->
 
         <section class="introduction-section w-full">
           <div class="container">
@@ -120,15 +125,15 @@ let title = "By Elements";
                     <img src="/assets/img/home-chair.jpg" alt="" />
                   </div>
                   <div class="px-6 space-y-4">
-                    <h3 class="text-2xl">
+                    <h3>
                       We are an international company: European origin based in
                       Indonesia
                     </h3>
-                    <p class="leading-loose">
+                    <p>
                       We operate in different areas and cultures. Being a fusion
                       of a European and an Indonesian company and also living
                       and having customers and shops internationally makes us
-                      aware of the different cultures and values on both ends of
+                      aware of the different cultures and values on both /.s of
                       the world. We can look from both the International as well
                       as the local perspective and from both the production as
                       well as the consumer’s point of view. This smoothens many
@@ -136,7 +141,7 @@ let title = "By Elements";
                     </p>
                   </div>
                 </div>
-                <!-- end first item  -->
+                <!-- /. first item  -->
                 <div class="flex flex-col space-y-8">
                   <div
                     class="flex flex-col justify-start items-center h-35v overflow-hidden"
@@ -144,19 +149,21 @@ let title = "By Elements";
                     <img src="/assets/img/home-person.jpg" alt="" />
                   </div>
                   <div class="px-6 space-y-4">
-                    <h3 class="text-2xl">Experience is what we’re known for</h3>
-                    <p class="leading-loose">
+                    <h3>Experience is what we’re known for</h3>
+                    <p>
                       Bastiaan has already been designing and producing ‘white
                       label furniture’  for renowned and successful
                       international furniture brands for years. The extensive
                       experience of developing and producing for other brands
                       has enabled us to see that our designs and products are
-                      very well received by end consumers in many different
+                      very well received by /. consumers in many different
                       countries and markets.
                     </p>
                   </div>
-                </div><!--  end second item -->
-              </div><!-- end Left side -->
+                </div>
+                <!--  /. second item -->
+              </div>
+              <!-- /. left side -->
               <div class="flex flex-col space-y-6">
                 <div
                   class="flex flex-col justify-center items-center h-35v overflow-hidden"
@@ -164,10 +171,8 @@ let title = "By Elements";
                   <img src="/assets/img/home-handcraft.jpg" alt="" />
                 </div>
                 <div class="px-6 space-y-4">
-                  <h3 class="text-2xl">
-                    Our production takes place in our Elements Factory
-                  </h3>
-                  <p class="leading-loose">
+                  <h3>Our production takes place in our Elements Factory</h3>
+                  <p>
                     ByE works together with Elements Factory based in Indonesia.
                     Therefore it can control its development and production
                     processes and implement its own vision and values. We are
@@ -178,11 +183,15 @@ let title = "By Elements";
                     the sourcing of materials all the way through the production
                     process.
                   </p>
-                </div><!-- end third item-->
-              </div><!-- end right side -->
-            </div><!-- end wrapper-->
-          </div><!-- end container-->
-        </section><!-- #end introduction section -->
+                </div><!-- /. third item-->
+              </div>
+              <!-- /. right side -->
+            </div>
+            <!-- /. wrapper-->
+          </div>
+          <!-- /. container-->
+        </section>
+        <!-- /. introduction section -->
 
         <section class="home-catalogue w-full px-6">
           <div class="container bg-bye-earth-red text-bye-white">
@@ -198,7 +207,7 @@ let title = "By Elements";
                   your own label.
                 </p>
                 <a
-                  href="#"
+                  href="."
                   class="flex flex-row items-center hover:text-bye-taupe-50 group"
                   >Go to our catalogue
                   <svg
@@ -216,12 +225,59 @@ let title = "By Elements";
                 >
               </div>
             </div>
-          </div><!-- #end container-->
-        </section><!-- #end catalogue section-->
+          </div><!-- /. container-->
+        </section>
+        <!-- /. catalogue section-->
 
-        <section></section><!-- end section -->
-      </div><!-- #end main wrapper -->
+        <section class="home-our-story w-full px-6">
+          <div class="container">
+            <div class="flex flex-col">
+              <div class="image-container">
+                <img src="/assets/img/home-bastiaan.jpg" alt="" />
+              </div>
+              <div class="text-container space-y-4 py-6">
+                <h3>Our story</h3>
+                <p class="hidden">
+                  As a Dutch kid Bastiaan grew up in Indonesia, making it his
+                  first home and giving him a thorough understanding of the
+                  Javanese culture, crafts, materials and possibilities.
+                  Combining his family’s extensive manufacturing experience and
+                  production facilities and his own design and economics
+                  background has laid the foundation for ByE..
+                </p>
+                <a
+                  href="."
+                  class="flex flex-row items-center hover:text-bye-taupe-200 group"
+                  >Read all about it
+                  <svg
+                    class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 26 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                      fill="currentColor"></path>
+                  </svg></a
+                >
+              </div>
+            </div>
+          </div><!-- /. container-->
+        </section>
+        <!-- /. section our story -->
+
+        <section class="home-outro w-full">
+          <div class="container">
+            <img class="w-full" src="assets/img/home-rugs.jpg" alt="" />
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /. home outro -->
+      </div>
+      <!-- /. main wrapper -->
     </main>
-    <footer></footer><!-- #end footer-->
+    <Footer />
   </body>
 </html>

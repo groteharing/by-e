@@ -38,15 +38,15 @@
         </div>
       </div>
       <!-- Nav menu -->
-      <div class="w-screen h-screen fixed top-0 left-0 z-10 bg-bye-earth opacity-5" @click.away="navigationOpen = false" 
+      <div class="background-opacity w-screen h-screen fixed top-0 left-0 z-10 bg-bye-earth opacity-5" 
+        @click.away="navigationOpen = false" 
         x-show="navigationOpen"
       ></div>
       <div
-        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 lg:left-auto lg:w-2/6 md:drop-shadow-"
+        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 lg:left-auto lg:w-2/6 md:drop-shadow"
         @click.away="navigationOpen = false" 
         x-show="navigationOpen"
       >
-      
         <ul class="nav-links flex flex-col text-4xl space-y-8">
           <li><a href="#">why work with us</a></li>
           <li><a href="#">catalog</a></li>
@@ -62,11 +62,11 @@
           <div>
             Email : <a
               href="mailto: hello@by-elements.com"
-              class="underline underline-offset-1">hello@by-elements.com</a
+              class="a-line">hello@by-elements.com</a
             >
           </div>
           <div>
-            Call:<a href="tel:00201498746" class="underline underline-offset-1"
+            Call:<a href="tel:00201498746" class="a-line"
               >+31(0)20 149 8746</a
             >
           </div>
