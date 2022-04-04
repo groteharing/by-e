@@ -1,7 +1,21 @@
 module.exports = {
-  mode: "jit",
   content: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
   theme: {
+    fontFamily: {
+      "sans": ["GeoSansLight", "sans-serif"],
+    },
+    colors: {
+      "bye-white": "#ffffff",
+      "bye-black": "#000000",
+      "bye-earth": "#0F0A07",
+      "bye-earth-red": "#30140B",
+      "bye-grey": "#eeeeee",
+      "bye-taupe": {
+        50: "#E8E3DC",
+        100: "#A89D87",
+        200: "#665F52",
+      },
+    },
     extend: {
       height: {
         "10v": "10vh",
@@ -15,20 +29,6 @@ module.exports = {
         "90v": "90vh",
         "100v": "100vh",
       },
-    },
-    colors: {
-      "bye-white": "#ffffff",
-      "bye-black": "#000000",
-      "bye-earth": "#0F0A07",
-      "bye-grey": "#eeeeee",
-      "bye-taupe": {
-        50: "#E8E3DC",
-        100: "#A89D87",
-        200: "#665F52",
-      },
-    },
-    fontFamily: {
-      GeoSans: ["GeoSansLight", "sans-serif"],
     },
   },
 };

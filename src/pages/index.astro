@@ -14,13 +14,10 @@ import Nav from "../components/Nav.astro";
 let title = "By Elements";
 ---
 
-<html
-  lang="en"
-  style="font-family: 'GeoSansLight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;"
->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <script
@@ -28,11 +25,10 @@ let title = "By Elements";
       defer
     >
     </script>
-  </head>
+  </head><!-- #end head-->
   <body>
     <!-- <Nav /> -->
     <main>
-      <!-- Hero  -->
       <hero
         class="w-screen h-screen relative flex flex-col justify-center items-center"
       >
@@ -51,121 +47,117 @@ let title = "By Elements";
           class="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center z-10 p-10"
         >
           <div>
-            <h2 class="text-4xl leading-relaxed text-center pb-6">
+            <h2 class="leading-relaxed text-center pb-6">
               Modern shapes combined with traditional Indonesian craftsmanship.
             </h2>
-            <svg
-              class="w-8 h-8 text-bye-white m-auto"
-              width="100%"
-              height="100%"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="16"
-                cy="16"
-                r="15.5"
-                fill="currentColor"
-                stroke="currentColor"
+            <a href="#">
+              <svg
+                class="w-8 h-8 text-bye-white m-auto"
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-              </circle>
-              <path
-                d="M21.7142 15.238L15.9999 20.9523L10.2856 15.238"
-                stroke="#665F52"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-              </path>
-            </svg>
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="15.5"
+                  fill="currentColor"
+                  stroke="currentColor"
+                >
+                </circle>
+                <path
+                  d="M21.7142 15.238L15.9999 20.9523L10.2856 15.238"
+                  stroke="#665F52"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                </path>
+              </svg>
+            </a>
           </div>
-        </div>
-      </hero>
+        </div><!-- #end container-->
+      </hero><!-- #end hero  -->
 
-      <!-- Mobile only section -->
-      <section class="w-full">
-        <div class="container px-6 py-12 space-y-4 mb-20">
-          <p class="leading-loose">
-            A collection full of contemporary, complete and fresh products that
-            customers can buy and resell under their own brand. The style is
-            natural, handcrafted and calm
-          </p>
-          <a
-            href="#"
-            class="flex flex-row items-center hover:text-bye-taupe-200 group"
-            >Why by from us?
-            <svg
-              class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
-              width="100%"
-              height="100%"
-              viewBox="0 0 26 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+      <div class="main-wrapper space-y-20">
+        <section class="mobile-only-section w-full">
+          <div class="container px-6 py-12 space-y-4">
+            <p class="leading-loose">
+              A collection full of contemporary, complete and fresh products
+              that customers can buy and resell under their own brand. The style
+              is natural, handcrafted and calm
+            </p>
+            <a
+              href="#"
+              class="flex flex-row items-center hover:text-bye-taupe-200 group"
+              >Why by from us?
+              <svg
+                class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+                width="100%"
+                height="100%"
+                viewBox="0 0 26 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                  fill="currentColor"></path>
+              </svg></a
             >
-              <path
-                d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
-                fill="currentColor"></path>
-            </svg></a
-          >
-        </div>
-      </section>
+          </div><!-- #end container-->
+        </section><!-- #end mobile only section -->
 
-      <!-- Intro section -->
-      <section class="w-full">
-        <div class="container space-y-4">
-          <!-- Full width -->
-          <div class="flex flex-col">
-            <!-- Left side -->
-            <div class="flex flex-col">
-              <div class="flex flex-col space-y-6 mb-10">
-                <div
-                  class="flex flex-col justify-center items-center h-35v overflow-hidden"
-                >
-                  <img src="/assets/img/home-chair.jpg" alt="" />
+        <section class="introduction-section w-full">
+          <div class="container">
+            <div class="wrapper flex flex-col space-y-16">
+              <div class="flex flex-col space-y-16">
+                <div class="flex flex-col space-y-8">
+                  <div
+                    class="flex flex-col justify-center items-center h-35v overflow-hidden"
+                  >
+                    <img src="/assets/img/home-chair.jpg" alt="" />
+                  </div>
+                  <div class="px-6 space-y-4">
+                    <h3 class="text-2xl">
+                      We are an international company: European origin based in
+                      Indonesia
+                    </h3>
+                    <p class="leading-loose">
+                      We operate in different areas and cultures. Being a fusion
+                      of a European and an Indonesian company and also living
+                      and having customers and shops internationally makes us
+                      aware of the different cultures and values on both ends of
+                      the world. We can look from both the International as well
+                      as the local perspective and from both the production as
+                      well as the consumer’s point of view. This smoothens many
+                      layers in design, communication, logistics and production.
+                    </p>
+                  </div>
                 </div>
-                <div class="px-6 space-y-4">
-                  <h3 class="text-2xl">
-                    We are an international company: European origin based in
-                    Indonesia
-                  </h3>
-                  <p class="leading-loose">
-                    We operate in different areas and cultures. Being a fusion
-                    of a European and an Indonesian company and also living and
-                    having customers and shops internationally makes us aware of
-                    the different cultures and values on both ends of the world.
-                    We can look from both the International as well as the local
-                    perspective and from both the production as well as the
-                    consumer’s point of view. This smoothens many layers in
-                    design, communication, logistics and production.
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col space-y-6 mb-10">
-                <div
-                  class="flex flex-col justify-start items-center h-35v overflow-hidden"
-                >
-                  <img src="/assets/img/home-person.jpg" alt="" />
-                </div>
-                    <div class="px-6 space-y-4">
-                      <h3 class="text-2xl">
-                        Experience is what we’re known for
-                      </h3>
-                      <p class="leading-loose">
-                        Bastiaan has already been designing and producing ‘white
-                        label furniture’  for renowned and successful
-                        international furniture brands for years. The extensive
-                        experience of developing and producing for other brands
-                        has enabled us to see that our designs and products are
-                        very well received by end consumers in many different
-                        countries and markets.
-                      </p>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-              <!-- Right side -->
-              <div class="flex flex-col space-y-6 mb-10">
+                <!-- end first item  -->
+                <div class="flex flex-col space-y-8">
+                  <div
+                    class="flex flex-col justify-start items-center h-35v overflow-hidden"
+                  >
+                    <img src="/assets/img/home-person.jpg" alt="" />
+                  </div>
+                  <div class="px-6 space-y-4">
+                    <h3 class="text-2xl">Experience is what we’re known for</h3>
+                    <p class="leading-loose">
+                      Bastiaan has already been designing and producing ‘white
+                      label furniture’  for renowned and successful
+                      international furniture brands for years. The extensive
+                      experience of developing and producing for other brands
+                      has enabled us to see that our designs and products are
+                      very well received by end consumers in many different
+                      countries and markets.
+                    </p>
+                  </div>
+                </div><!--  end second item -->
+              </div><!-- end Left side -->
+              <div class="flex flex-col space-y-6">
                 <div
                   class="flex flex-col justify-center items-center h-35v overflow-hidden"
                 >
@@ -186,12 +178,50 @@ let title = "By Elements";
                     the sourcing of materials all the way through the production
                     process.
                   </p>
-                </div>
+                </div><!-- end third item-->
+              </div><!-- end right side -->
+            </div><!-- end wrapper-->
+          </div><!-- end container-->
+        </section><!-- #end introduction section -->
+
+        <section class="home-catalogue w-full px-6">
+          <div class="container bg-bye-earth-red text-bye-white">
+            <div class="flex flex-col">
+              <div class="image-container">
+                <img src="/assets/img/home-catalogue.jpg" alt="" />
+              </div>
+              <div class="text-container space-y-4 px-6 py-10">
+                <h3>See the full collection in our catalogue</h3>
+                <p>
+                  In our catalogue you will see our most recent range of
+                  furniture and accessories that you can order and brand with
+                  your own label.
+                </p>
+                <a
+                  href="#"
+                  class="flex flex-row items-center hover:text-bye-taupe-50 group"
+                  >Go to our catalogue
+                  <svg
+                    class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 26 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                      fill="currentColor"></path>
+                  </svg></a
+                >
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </div><!-- #end container-->
+        </section><!-- #end catalogue section-->
+
+        <section></section><!-- end section -->
+      </div><!-- #end main wrapper -->
     </main>
+    <footer></footer><!-- #end footer-->
   </body>
 </html>
