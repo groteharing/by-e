@@ -20,6 +20,7 @@ module.exports = {
       height: {
         "10v": "10vh",
         "20v": "20vh",
+        "25v": "25vh",
         "30v": "30vh",
         "35v": "35vh",
         "40v": "40vh",

@@ -1,0 +1,225 @@
+---
+import Header from "../components/Header.astro";
+import Catalogue from "../components/Catalog-comp.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+---
+
+<html lang="en">
+  <Header />
+  <body>
+    <!-- <Nav /> -->
+    <main>
+      <hero class="w-screen h-screen flex flex-col justify-end bg-bye-grey">
+        <div
+          class="text-container flex flex-col
+               space-y-4 px-6 py-10"
+        >
+          <h1>Our story</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a
+            href="#"
+            class="flex flex-row items-center hover:text-bye-taupe-200 group"
+            >Read more
+            <svg
+              class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+              width="100%"
+              height="100%"
+              viewBox="0 0 26 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                fill="currentColor"></path>
+            </svg></a
+          >
+        </div><!-- /. text wrap -->
+        <div
+          class="image-container flex flex-row justify-center items-end object-cover h-30v w-full overflow-hidden"
+        >
+          <img src="/assets/img/our-story-1.jpg" alt="" />
+        </div><!-- /. img wrap -->
+      </hero>
+      <!-- /. hero  -->
+      <div class="main-wrapper space-y-20 my-20">
+        <section class="introduction-section w-full">
+          <div class="container">
+            <div class="wrapper-grid grid grid-flow-row gap-20 w-full">
+              <div class="grid-item flex flex-col space-y-4">
+                <div class="grid-subitem px-6">
+                  <h2>Our history begins in Indonesia</h2>
+                </div>
+                <!-- /.grid-subitem -->
+                <div class="grid-subitem px-6 space-y-4">
+                  <p>
+                    Bastiaan grew up in Indonesia where he was exposed to the
+                    furniture industry at a young age. Thirty years prior his
+                    parents, Leuntje and Douwe, started a furniture company in
+                    Java. From the start the company has been producing
+                    furniture on a large scale for renowned European brands.
+                  </p>
+                  <p class="pl-6">
+                    At the age of thirty, Bastiaan revisited Indonesia to try
+                    and raise his parents’ company to a higher level. The core
+                    business of his parents was to make customized products for
+                    European brands. Bastiaan saw an opportunity to design an
+                    entire collection himself and offer it to international
+                    customers. He offered his own designs to contemporary
+                    wholesale brands and before he knew it his white label
+                    collection was being sold on a large scale all over the
+                    world. ByE was now selling its collection straight from the
+                    factory to all over the world; from Australia, Asia, the US,
+                    Europe, the Middle East to Latin America.
+                  </p>
+                </div>
+                <!-- /.grid-subitem -->
+              </div>
+              <!-- /.grid-item -->
+              <div
+                class="grid-item flex flex-row justify-center items-start h-45 overflow-hidden"
+              >
+                <img
+                  src="/assets/img/our-story-2.jpg"
+                  alt=""
+                  class="object-cover"
+                />
+              </div>
+              <!-- /.grid-item -->
+              <div class="grid-item row-start-4">
+                <div
+                  class="grid-item flex flex-row justify-center items-start overflow-hidden"
+                >
+                  <img
+                    src="/assets/img/our-story-3.jpg"
+                    alt=""
+                    class="object-cover"
+                  />
+                </div>
+              </div>
+              <!-- /.grid-item -->
+              <div class="grid-item px-6">
+                <p>
+                  The following year ByE participated at the largest European
+                  furniture fair in Paris, Maison & Objet, where it received a
+                  prize for the best designed chair the first time it
+                  participated. At the Jakarta fair ByE received prizes for the
+                  best stand. The newcomer was receiving recognition from both
+                  the customers ordering all over the world and the industry
+                  itself giving out prizes for the designs. Bastiaan finds it
+                  essential that the ByE collection is contemporary, complete
+                  and innovative, combining Indonesian craftsmanship with
+                  Western design influences. In addition, the collection can be
+                  easily combined with different interior styles.
+                </p>
+              </div>
+              <!-- /.grid-item -->
+              <div class="grid-item flex flex-col space-y-4">
+                <div class="grid-subitem px-6">
+                  <h2>Designed only by Bastiaan himself</h2>
+                </div>
+                <!-- /.grid-subitem -->
+                <div class="grid-subitem px-6 space-y-4">
+                  <p>
+                    Firstly, Bastiaan designs the products he wants to see in
+                    the collection. He keeps in mind that the products need to
+                    be compatible with different styles, but still distinctive
+                    enough to give it personality, albeit neutral and timeless.
+                    After the development phase the collection will be produced
+                    in the Elements Factory.
+                  </p>
+                  <p class="pl-6">
+                    Bastiaan exposes his annual new collection at international
+                    furniture fairs where buyers can order his products by the
+                    container. As soon as the order has been placed the products
+                    will be made in the factory. A sea freight container will be
+                    filled with the products and will be shipped to the
+                    customer’s destination. As soon as the ship as at sea, the
+                    container with the products will become the property of the
+                    customer.
+                  </p>
+                </div>
+                <!-- /.grid-subitem -->
+              </div>
+              <!-- /.grid-item -->
+              <div class="grid-item flex flex-row justify-center items-start">
+                <img
+                  src="/assets/img/our-story-4-5.jpg"
+                  alt=""
+                  class="object-cover"
+                />
+              </div>
+              <!-- /.grid-item -->
+              <div
+                class="grid-item lg:flex flex-row justify-center items-start hidden"
+              >
+                <img
+                  src="/assets/img/our-story-6.jpg"
+                  alt=""
+                  class="object-cover"
+                />
+              </div>
+              <!-- /.grid-item -->
+              <div class="grid-item px-6 text-center">
+                <q class="text-2xl"
+                  >Our collection is full of contemporary, complete and fresh
+                  products that customers can buy and resell under their own
+                  brand. The style is natural, handcrafted and calm.</q
+                >
+              </div>
+              <!-- /.grid-item -->
+            </div>
+          </div>
+        </section>
+        <section class="section-catalogue w-full px-6">
+          <div class="container bg-bye-taupe-100 text-bye-white">
+            <div class="flex flex-col">
+              <div
+                class="image-container flex flex-row justify-center items-center overflow-hidden h-40v"
+              >
+                <img src="/assets/img/home-handcraft.jpg" alt="" />
+              </div>
+              <div
+                class="text-container flex flex-col
+               space-y-4 px-6 py-10"
+              >
+                <h2>The benefits of choosing By E</h2>
+                <p class="hidden">
+                  We are a European company that has its roots entrenched in
+                  Indonesia. We understand the local as well as the
+                  international side of the production process and supply chain.
+                  Extensive experience, unique designs, control over the
+                  production process, understanding the needs of different
+                  markets, clear communication and innovation in a dynamic
+                  furniture industry are a few sharp advantages that we offer.
+                </p>
+                <a
+                  href="#"
+                  class="flex flex-row items-center hover:text-bye-taupe-50 group"
+                  >Why work with us
+                  <svg
+                    class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 26 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                      fill="currentColor"></path>
+                  </svg></a
+                >
+              </div>
+            </div>
+          </div><!-- /. container-->
+        </section>
+        <!-- /. section-why-work-with-us -->
+      </div><!-- /.main wrapper -->
+    </main>
+    <Footer />
+  </body>
+</html>

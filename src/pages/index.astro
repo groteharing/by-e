@@ -1,19 +1,20 @@
 ---
-import baselayout from "../layouts/baselayout.astro";
-import Catalogue from "../components/Catalogue.astro";
+import Header from "../components/Header.astro";
+import Catalogue from "../components/Catalog-comp.astro";
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 ---
 
 <html lang="en">
-  <baselayout>
+  <Header />
+  <body>
     <Nav />
-    <main>
+    <main class="w-full">
       <hero
-        class="w-screen h-screen relative flex flex-col justify-center items-center"
+        class="w-full h-screen relative flex flex-col justify-center items-center lg:flex-row"
       >
         <div
-          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-bye-grey z-0 flex flex-row items-center justify-center"
+          class="absolute h-full top-0 right-0 bottom-0 left-0 bg-bye-grey z-0 flex flex-row items-center justify-center overflow-hidden lg:relative lg:w-3/6"
         >
           <img
             src="/assets/img/home-hero.jpg"
@@ -24,13 +25,21 @@ import Nav from "../components/Nav.astro";
         <!-- /. Left side wrapper -->
 
         <div
-          class="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center z-10 p-10"
+          class="absolute h-full top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center z-10 p-10 lg:relative lg:w-3/6 lg:bg-bye-taupe-100 lg:text-bye-white lg:p-16"
         >
           <div>
-            <h2 class="leading-relaxed text-center pb-6">
+            <h1 class="sr-only">By E</h1>
+            <h2
+              class="leading-normal text-center pb-6 text-4xl lg:text-left lg:leading-normal"
+            >
               Modern shapes combined with traditional Indonesian craftsmanship.
             </h2>
-            <a href="#hero-extend">
+            <p class="hidden lg:block">
+              A collection full of contemporary, complete and fresh products
+              that you can buy and resell under your own brand. The style is
+              natural, handcrafted and calm.
+            </p>
+            <a href="#hero-extend" class="lg:hidden">
               <svg
                 class="w-8 h-8 text-bye-white m-auto"
                 width="100%"
@@ -57,14 +66,33 @@ import Nav from "../components/Nav.astro";
                 </path>
               </svg>
             </a>
+            <a
+              href="#"
+              class="lg:flex lg:flex-row items-center hover:text-bye-taupe-200 group hidden lg:mt-6"
+              >Why work with us
+              <svg
+                class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
+                width="100%"
+                height="100%"
+                viewBox="0 0 26 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.9878 0L18.7275 1.28501L22.5611 5.10701H0V6.89299H22.5611L18.7284 10.7159L19.9878 12L26 6L19.9878 0Z"
+                  fill="currentColor"></path>
+              </svg></a
+            >
           </div>
         </div>
         <!-- /. Right side wrapper -->
         <!-- /. container-->
       </hero>
       <!-- /. hero  -->
-      <div class="main-wrapper space-y-20">
-        <section id="hero-extend" class="mobile-only-section w-full">
+      <div
+        class="main-wrapper max-w-screen-2xl mx-auto space-y-20  flex flex-col items-center justify-center w-full lg:space-y-48 lg:mb-60"
+      >
+        <section id="hero-extend" class="mobile-only-section lg:hidden">
           <div class="container px-6 py-12 space-y-4">
             <p>
               A collection full of contemporary, complete and fresh products
@@ -72,7 +100,7 @@ import Nav from "../components/Nav.astro";
               is natural, handcrafted and calm
             </p>
             <a
-              href="."
+              href="#"
               class="flex flex-row items-center hover:text-bye-taupe-200 group"
               >Why by from us?
               <svg
@@ -93,21 +121,29 @@ import Nav from "../components/Nav.astro";
         </section>
         <!-- /. section-mobile-only -->
 
-        <section class="introduction-section w-full">
+        <section class="introduction-section md:px-16">
           <div class="container">
-            <div class="wrapper flex flex-col space-y-16">
-              <div class="flex flex-col space-y-16">
+            <div
+              class="wrapper flex flex-col space-y-16 lg:space-y-reverse lg:flex-row"
+            >
+              <div
+                class="flex flex-col space-y-16 md:flex-row md:space-x-16 lg:w-1/2"
+              >
                 <div class="flex flex-col space-y-8">
                   <div
                     class="flex flex-col justify-center items-center h-35v overflow-hidden"
                   >
-                    <img src="/assets/img/home-chair.jpg" alt="" />
+                    <img
+                      src="/assets/img/home-chair.jpg"
+                      alt=""
+                      class="object-cover min-h-full min-w-full"
+                    />
                   </div>
-                  <div class="px-6 space-y-4">
-                    <h3>
+                  <div class="px-6 space-y-4 md:px-0">
+                    <h2>
                       We are an international company: European origin based in
                       Indonesia
-                    </h3>
+                    </h2>
                     <p>
                       We operate in different areas and cultures. Being a fusion
                       of a European and an Indonesian company and also living
@@ -123,12 +159,16 @@ import Nav from "../components/Nav.astro";
                 <!-- /. first item  -->
                 <div class="flex flex-col space-y-8">
                   <div
-                    class="flex flex-col justify-start items-center h-35v overflow-hidden"
+                    class="flex flex-col justify-start items-start h-35v overflow-hidden"
                   >
-                    <img src="/assets/img/home-person.jpg" alt="" />
+                    <img
+                      src="/assets/img/home-person.jpg"
+                      alt=""
+                      class="object-cover min-h-full min-w-full"
+                    />
                   </div>
-                  <div class="px-6 space-y-4">
-                    <h3>Experience is what we’re known for</h3>
+                  <div class="px-6 space-y-4 md:px-0">
+                    <h2>Experience is what we’re known for</h2>
                     <p>
                       Bastiaan has already been designing and producing ‘white
                       label furniture’  for renowned and successful
@@ -143,14 +183,14 @@ import Nav from "../components/Nav.astro";
                 <!--  /. second item -->
               </div>
               <!-- /. left side -->
-              <div class="flex flex-col space-y-6">
+              <div class="flex flex-col space-y-6 lg:w-1/2 lg:pl-24">
                 <div
-                  class="flex flex-col justify-center items-center h-35v overflow-hidden"
+                  class="flex flex-col  justify-center items-center h-35v overflow-hidden lg:h-auto"
                 >
                   <img src="/assets/img/home-handcraft.jpg" alt="" />
                 </div>
-                <div class="px-6 space-y-4">
-                  <h3>Our production takes place in our Elements Factory</h3>
+                <div class="px-6 space-y-4 md:px-0">
+                  <h2>Our production takes place in our Elements Factory</h2>
                   <p>
                     ByE works together with Elements Factory based in Indonesia.
                     Therefore it can control its development and production
@@ -174,15 +214,23 @@ import Nav from "../components/Nav.astro";
 
         <Catalogue />
 
-        <section class="home-our-story w-full px-6">
+        <section class="home-our-story px-6  md:px-16">
           <div class="container">
-            <div class="flex flex-col">
-              <div class="image-container">
-                <img src="/assets/img/home-bastiaan.jpg" alt="" />
+            <div class="flex flex-col lg:flex-row">
+              <div
+                class="image-container lg:w-1/2 lg:flex flex-row justify-start items-center overflow-hidden"
+              >
+                <img
+                  src="/assets/img/home-bastiaan.jpg"
+                  alt=""
+                  class="min-w-full object-cover"
+                />
               </div>
-              <div class="text-container space-y-4 py-6">
-                <h3>Our story</h3>
-                <p class="hidden">
+              <div
+                class="text-container space-y-4 py-6 lg:w-1/2 lg:space-y-reverse lg:flex lg:flex-col lg:justify-center lg:items-start lg:p-16"
+              >
+                <h2>Our story</h2>
+                <p class="hidden lg:block lg:pt-4">
                   As a Dutch kid Bastiaan grew up in Indonesia, making it his
                   first home and giving him a thorough understanding of the
                   Javanese culture, crafts, materials and possibilities.
@@ -213,15 +261,22 @@ import Nav from "../components/Nav.astro";
         </section>
         <!-- /. section-our-story -->
 
-        <section class="section-home-outro w-full">
-          <div class="container">
-            <img class="w-full" src="assets/img/home-rugs.jpg" alt="" />
-          </div>
-          <!-- /.container -->
-        </section>
         <!-- /. section-home-outro -->
       </div><!-- /.main wrapper-->
+
+      <section class="section-home-outro w-full m-auto">
+        <div
+          class="contain w-full flex flex-row justify-center items-center overflow-hidden h-25v max-h-48"
+        >
+          <img
+            src="assets/img/home-rugs.jpg"
+            alt=""
+            class="min-w-full min-h-full object-cover"
+          />
+        </div>
+        <!-- /.container -->
+      </section>
     </main>
     <Footer />
-  </baselayout>
+  </body>
 </html>

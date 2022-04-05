@@ -1,12 +1,11 @@
 <nav class="absolute top-0" x-data="{navigationOpen: false}">
-      <!-- Nav container -->
       <div
         class="relative flex flex-col px-8 py-10 z-50 lg:px-16"
       >
-        <!-- Logo -->
-        <div class="w-100 flex flex-row justify-between items-center ">
+        <div class="w-100 flex flex-row justify-between items-center">
+        <a href="/">
           <svg
-            class="h-12 w-auto text-bye-black"
+            class="h-12 w-auto"
             width="100%"
             height="100%"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +22,10 @@
               d="M17.05,76.11l-4.47-9.54h1.28l4.08,8.94Zm-2.13,4.45,6.16-14h1.11l-6.09,14Z"
               fill="currentColor"></path>
           </svg>
-          <!-- Hamburger  -->
+          </a>
+          <!-- /. logo -->
           <button
-            class="hamburger hamburger--slider fixed top-10 right-8 lg:right-16 w-10 h-8 flex flex-col items-center mt-2 pt-2"
+            class="hamburger hamburger--slider fixed top-10 right-8 lg:right-16 w-10 h-8 flex flex-col items-center mt-2 pt-2 bg-blend-multiply"
             type="button"
             x-on:click="navigationOpen = !navigationOpen"
             x-bind:class="navigationOpen && 'is-active'"
@@ -34,28 +34,24 @@
               <span class="hamburger-inner"></span>
             </span>
           </button>
+          <!-- /.hamburger  -->
         </div>
-      </div>
-      <!-- Nav menu -->
+      </div><!-- /. top row -->
       <div class="background-opacity w-screen h-screen fixed top-0 left-0 z-10 bg-bye-earth opacity-40" 
         x-on:click="navigationOpen = false" 
         x-show="navigationOpen"
-      ></div>
+      ></div><!-- /. background opacity -->
       <div
-        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 lg:left-auto lg:w-2/6 md:drop-shadow"
+        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 sm:left-auto sm:w-3/6 lg:w-2/6 md:drop-shadow"
         x-on:click="navigationOpen = false" 
         x-show="navigationOpen"
       >
         <ul class="nav-links flex flex-col text-4xl space-y-8">
-          <li><a href="#">why work with us</a></li>
-          <li><a href="#">catalog</a></li>
-          <li class="space-y-2">
-            <a href="#">about</a>
-            <ul class="text-2xl space-y-1">
-              <li><a href="#">our story</a></li>
-              <li><a href="#">our brand values</a></li>
-            </ul>
-          </li>
+          <li><a href="/">home</a></li>
+          <li><a href="/why-work-with-us">why work with us</a></li>
+          <li><a href="/catalog">catalog</a></li>
+          <li><a href="/our-story">our story</a></li>
+          <li><a href="/our-brand-values">our brand values</a></li>
         </ul>
         <div class="flex flex-col absolute bottom-10">
           <div>
@@ -70,5 +66,5 @@
             >
           </div>
         </div>
-      </div>
+      </div><!-- /. nav links and menu -->
     </nav><!-- /. end nav -->

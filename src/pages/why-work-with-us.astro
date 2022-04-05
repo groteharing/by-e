@@ -1,42 +1,21 @@
 ---
-// Style Imports
-import "../styles/global.css";
-import "../styles/output.css";
-// Component Imports
-import Nav from "../components/Nav.astro";
-import Catalogue from "../components/Catalogue.astro";
+import Header from "../components/Header.astro";
+import Catalogue from "../components/Catalog-comp.astro";
 import Footer from "../components/Footer.astro";
-
-// You can import components from any supported Framework here!
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = "By Elements";
+import Nav from "../components/Nav.astro";
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    >
-    </script>
-  </head><!-- /. head-->
+  <Header />
   <body>
-    <!-- <Nav /> -->
+    <Nav />
     <main>
       <hero class="w-screen h-screen flex flex-col justify-end">
         <div
           class="text-container flex flex-col
                space-y-4 px-6 py-10"
         >
-          <h3>Why work with us?</h3>
+          <h1>Why work with us?</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,10 +52,10 @@ let title = "By Elements";
               <div class="grid-item">
                 <img src="/assets/img/wwu-scene-1.jpg" alt="" class="hidden" />
                 <div class="text-wrap px-6 space-y-4">
-                  <h3>
+                  <h2>
                     We are an international company: European origin based in
                     Indonesia
-                  </h3>
+                  </h2>
                   <p>
                     We operate in different areas and cultures. Being a fusion
                     of a European and an Indonesian company and also living and
@@ -100,7 +79,7 @@ let title = "By Elements";
                   />
                 </div>
                 <div class="text-wrap px-6 space-y-4 w-3/4">
-                  <h3>Our production takes place in our Elements Factory</h3>
+                  <h2>Our production takes place in our Elements Factory</h2>
                   <p>
                     ByE works together with Elements Factory based in Indonesia.
                     Therefore it can control its development and production
@@ -125,7 +104,7 @@ let title = "By Elements";
                   />
                 </div>
                 <div class="text-wrap px-6 space-y-4">
-                  <h3>Updated collection every year</h3>
+                  <h2>Updated collection every year</h2>
                   <p>
                     ByE develops and launches a new collection every year with
                     fresh items. The collection takes  into account and
@@ -149,7 +128,7 @@ let title = "By Elements";
                     />
                   </div>
                   <div class="text-wrap px-6 space-y-4 w-3/4">
-                    <h3>Experience is what we’re known for</h3>
+                    <h2>Experience is what we’re known for</h2>
                     <p>
                       Bastiaan has already been designing and producing ‘white
                       label furniture’  for renowned and successful
@@ -172,7 +151,7 @@ let title = "By Elements";
                     />
                   </div>
                   <div class="text-wrap px-6 space-y-4 w-3/4">
-                    <h3>Relatively low MOQ’s per product</h3>
+                    <h2>Relatively low MOQ’s per product</h2>
                     <p>
                       Because our products are crafted by hand we have
                       relatively low minimum order requirements for our product
