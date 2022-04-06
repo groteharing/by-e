@@ -1365,6 +1365,16 @@ p, body {
     padding-right: 3rem;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .lg\:pb-28 {
     padding-bottom: 7rem;
   }

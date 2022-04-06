@@ -10,10 +10,12 @@ import Nav from "../components/Nav.astro";
   <body>
     <Nav />
     <main>
-      <hero class="w-screen h-screen flex flex-col justify-end bg-bye-taupe-50">
+      <hero
+        class="w-screen h-screen flex flex-col justify-end bg-bye-taupe-50 lg:flex-row lg:items-center"
+      >
         <div
           class="text-container flex flex-col
-               space-y-4 px-6 py-10"
+               space-y-4 px-6 py-10 lg:w-2/5 lg:px-16"
         >
           <h1 class="sr-only">Catalogue</h1>
           <h2 class="text-4xl">
@@ -45,13 +47,19 @@ import Nav from "../components/Nav.astro";
           >
         </div><!-- /. text wrap -->
         <div
-          class="image-container flex flex-row justify-center items-end object-cover h-25v w-full overflow-hidden"
+          class="image-container flex flex-row justify-center items-end object-cover h-25v w-full overflow-hidden lg:w-3/5 lg:h-65v"
         >
-          <img src="/assets/img/catalog-1.jpg" alt="" />
+          <img
+            src="/assets/img/catalog-1.jpg"
+            alt=""
+            class="min-h-full min-w-full object-cover"
+          />
         </div><!-- /. img wrap -->
       </hero>
       <!-- /. hero  -->
-      <div class="main-wrapper space-y-20 my-20">
+      <div
+        class="ain-wrapper space-y-20 my-20 max-w-screen-2xl mx-auto flex flex-col items-center justify-center w-full"
+      >
         <section class="introduction-section w-full">
           <div class="container">
             <div class="wrapper-grid grid gap-20 w-full">
