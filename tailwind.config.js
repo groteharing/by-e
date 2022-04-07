@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,ts,tsx,vue}"],
   theme: {
+    container: {
+      center: true,
+    },
     fontFamily: {
       "sans": ["GeoSansLight", "sans-serif"],
     },

@@ -20,8 +20,9 @@
   h4 {
     @apply text-lg;
   }
-  p, body {
-    @apply leading-loose
+  p,
+  body {
+    @apply leading-loose;
   }
   .a-line {
     @apply hover:underline;
