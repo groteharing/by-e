@@ -643,6 +643,22 @@ p, body {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-\[3_2\] {
+  aspect-ratio: 3 2;
+}
+
+.aspect-\[3\/2\] {
+  aspect-ratio: 3 / 2;
+}
+
+.aspect-\[2\/3\] {
+  aspect-ratio: 2 / 3;
+}
+
 .h-4 {
   height: 1rem;
 }
