@@ -10,11 +10,13 @@
     "format": "yarn prettier -w ."
   },
   "devDependencies": {
-    "astro": "^0.24.3",
+    "astro": "^0.25.4",
     "prettier": "^2.6.1",
     "prettier-plugin-astro": "^0.0.12",
     "prettier-plugin-tailwindcss": "^0.1.8",
-    "tailwindcss": "^3.0.23",
-    "astro": "^0.25.4"
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@astrojs/netlify": "^0.1.0"
   }
 }
