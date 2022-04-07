@@ -3,10 +3,26 @@ import Header from "../components/Header.astro";
 import Work from "../components/Work-with-us.astro";
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
+
+let title = "By E Home";
+let siteUrl = "https://www.by-elements.com";
+let siteTitle = "By E";
+let description = "Lorem Ipsum";
 ---
 
 <html lang="en">
-  <Header />
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/open-graph-by-e.png" />
+    <Header />
+  </head>
   <body>
     <Nav />
     <main>
@@ -34,7 +50,7 @@ import Nav from "../components/Nav.astro";
       </hero>
       <!-- /. hero  -->
       <div class="main-wrapper space-y-20 my-20 lg:mt-20 lg:mb-0">
-        <section class="introduction-section w-full">
+        <section class="introduction-section w-full lg:px-24">
           <div class="container">
             <div class="wrapper-grid grid grid-flow-row gap-y-32 gap-x-20 w-full lg:grid-cols-2">
               <div class="grid-item flex flex-col space-y-4">

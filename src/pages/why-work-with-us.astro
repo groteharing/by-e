@@ -3,10 +3,26 @@ import Header from "../components/Header.astro";
 import Catalogue from "../components/Catalog-comp.astro";
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
+
+let title = "By E Home";
+let siteUrl = "https://www.by-elements.com";
+let siteTitle = "By E";
+let description = "Lorem Ipsum";
 ---
 
 <html lang="en">
-  <Header />
+  <head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/open-graph-by-e.png" />
+    <Header />
+  </head>
   <body>
     <Nav />
     <main>
@@ -17,7 +33,7 @@ import Nav from "../components/Nav.astro";
         >
           <h1>Why work with us?</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#" class="flex flex-row items-center hover:text-bye-taupe-50 group"
+          <a href="#wwu" class="flex flex-row items-center hover:text-bye-taupe-50 group"
             >Read more
             <svg
               class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
@@ -37,7 +53,7 @@ import Nav from "../components/Nav.astro";
       </hero>
       <!-- /. hero  -->
       <div class="main-wrapper space-y-20 my-20 max-w-screen-2xl mx-auto flex flex-col items-center justify-center w-full lg:space-y-32 lg:mb-32">
-        <section class="introduction-section lg:px-24">
+        <section class="introduction-section lg:px-24" id="wwu">
           <div class="container">
             <div class="wrapper-grid grid gap-36 w-full lg:grid-cols-2 lg:grid-rows-[auto_5rem_auto_5rem_auto]">
               <div class="grid-item lg:space-y-12 lg:row-start-1 lg:row-span-1">
