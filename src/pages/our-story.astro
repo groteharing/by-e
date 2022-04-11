@@ -26,7 +26,7 @@ let description = "Customized furniture for European brands. Our History begins 
   <body>
     <NavBlack />
     <main>
-      <hero class="w-screen h-screen flex flex-col justify-end bg-bye-grey lg:flex-row lg:items-center">
+      <hero class="w-screen min-h-screen flex flex-col justify-end bg-bye-grey lg:flex-row lg:items-center">
         <div class="text-container flex flex-col space-y-4 px-6 py-10 lg:w-2/5 lg:px-16">
           <h1>Our story</h1>
           <p>
@@ -52,7 +52,7 @@ let description = "Customized furniture for European brands. Our History begins 
         </div><!-- /. img wrap -->
       </hero>
       <!-- /. hero  -->
-      <div class="main-wrapper space-y-20 my-20 lg:mt-20 lg:mb-0" id="#story">
+      <div class="main-wrapper space-y-20 my-32 lg:mt-20" id="#story">
         <section class="introduction-section w-full lg:px-24">
           <div class="container">
             <div class="wrapper-grid grid grid-flow-row gap-y-32 gap-x-20 w-full lg:grid-cols-2">
@@ -80,9 +80,9 @@ let description = "Customized furniture for European brands. Our History begins 
                 <img src="/assets/img/our-story-2.jpg" alt="" class="object-cover" loading="lazy" />
               </div>
               <!-- /.grid-item 2nd -->
-              <div class="grid-item">
-                <div class="grid-item flex flex-row justify-center items-start overflow-hidden lg:justify-end ">
-                  <img src="/assets/img/our-story-3.jpg" alt="" class="object-cover max-w-md" loading="lazy" />
+              <div class="grid-item flex flex-row items-end justify-center lg:justify-end">
+                <div class="grid-item flex flex-row justify-center items-center px-16 lg:px-0 max-w-lg overflow-hidden">
+                  <img src="/assets/img/our-story-3.jpg" alt="" class="object-cover min-h-full min-w-full " loading="lazy" />
                 </div>
               </div>
               <!-- /.grid-item 3rd -->
@@ -133,8 +133,8 @@ let description = "Customized furniture for European brands. Our History begins 
             </div>
           </div>
         </section>
-        <Work />
       </div><!-- /.main wrapper -->
+      <Work />
     </main>
     <Footer />
   </body>
