@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Catalogue from "../components/Catalog-comp.astro";
 import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
+import NavWhite from "../components/Nav-white.astro";
 
 let title = "By E | See the full collection in our Catalogue";
 let siteUrl = "https://www.by-elements.com/catalog";
@@ -10,7 +10,7 @@ let siteTitle = "By E";
 let description = "Check our most recent range of furniture and accessories. Order and brand it with your own label.";
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -24,9 +24,9 @@ let description = "Check our most recent range of furniture and accessories. Ord
     <Header />
   </head>
   <body>
-    <Nav />
+    <NavWhite />
     <main>
-      <hero class="w-screen h-screen flex flex-col justify-end bg-bye-taupe-50 lg:flex-row lg:items-center">
+      <hero class="w-screen h-screen flex flex-col justify-end bg-bye-earth-red text-bye-white lg:flex-row lg:items-center">
         <div
           class="text-container flex flex-col
                space-y-4 px-6 py-10 lg:w-2/5 lg:px-16"
@@ -37,7 +37,7 @@ let description = "Check our most recent range of furniture and accessories. Ord
             The byE catalogue contains our most recent range of furniture and accessories that can be ordered and shipped to anywhere in the world completely branded with your own
             label. Browse through our full catalogue to find the furniture and accessories that compliment your own collection.
           </p>
-          <a href="/catalogue/#catalog-section" class="flex flex-row items-center hover:text-bye-taupe-50 group"
+          <a href="/catalogue/#catalog-section" class="flex flex-row items-center hover:text-bye-taupe-50 group uppercase"
             >Show me more
             <svg
               class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
@@ -52,17 +52,17 @@ let description = "Check our most recent range of furniture and accessories. Ord
           >
         </div><!-- /. text wrap -->
         <div class="image-container flex flex-row justify-center items-end object-cover h-25v w-full overflow-hidden lg:w-3/5 lg:h-65v">
-          <img src="/assets/img/catalog-1.jpg" alt="" class="min-h-full min-w-full object-cover" />
+          <img src="/assets/img/catalog-1.jpg" alt="" class="min-h-full min-w-full object-cover" loading="auto" />
         </div><!-- /. img wrap -->
       </hero>
       <!-- /. hero  -->
       <div class="main-wrapper space-y-20 my-20 max-w-screen-2xl mx-auto flex flex-col items-center justify-center w-full lg:space-y-32 lg:mb-32">
         <section class="introduction-section w-full lg:px-24" id="catalog-section">
           <div class="container">
-            <div class="wrapper-grid grid gap-32 w-full lg:grid-rows-2 lg:grid-cols-2 lg:items-start lg:gap-x-20 lg:gap-y-0">
+            <div class="wrapper-grid grid gap-32 w-full lg:grid-rows-2 lg:grid-cols-2 lg:items-start lg:gap-x-20 lg:gap-y-32">
               <div class="grid-item lg:flex lg:flex-col lg:justify-start lg:col-span-2  ">
-                <div class="img-wrap pr-6 flex flex-row justify-center items-center">
-                  <img src="/assets/img/catalog-2.jpg" alt="" />
+                <div class="img-wrap pr-6 flex flex-row justify-center items-center overflow-hidden max-w-3xl self-center">
+                  <img src="/assets/img/catalog-2.jpg" alt="" class="min-h-full min-w-full object-cover" loading="lazy" />
                 </div>
                 <div class="text-wrap space-y-4 text-right px-6 lg:text-center lg:py-4">
                   <p>Black Komodo chair and the Cairo lamp</p>
@@ -70,7 +70,7 @@ let description = "Check our most recent range of furniture and accessories. Ord
               </div><!-- /. grid-item -->
               <div class="grid-item lg:flex lg:flex-col lg:justify-center">
                 <div class="img-wrap flex flex-row justify-center items-center pl-6 lg:pl-0">
-                  <img src="/assets/img/catalog-3.jpg" alt="" />
+                  <img src="/assets/img/catalog-3.jpg" alt="" loading="lazy" />
                 </div>
                 <div class="text-wrap space-y-4 px-6 lg:text-center lg:py-4">
                   <p>Bee lamp</p>
@@ -78,7 +78,7 @@ let description = "Check our most recent range of furniture and accessories. Ord
               </div><!-- /. grid-item -->
               <div class="grid-item lg:flex lg:flex-col lg:justify-center lg:pt-24">
                 <div class="img-wrap pr-6 flex flex-row justify-center items-center lg:pr-0">
-                  <img src="/assets/img/catalog-4.jpg" alt="" />
+                  <img src="/assets/img/catalog-4.jpg" alt="" loading="lazy" />
                 </div>
                 <div class="text-wrap space-y-4 text-right px-6 lg:text-center lg:py-4">
                   <p>Lita barstool and rainwood stool</p>
@@ -94,13 +94,13 @@ let description = "Check our most recent range of furniture and accessories. Ord
         <section class="section-catalogue px-6 w-full flex flex-col justify-center items-center lg:px-0">
           <div class="bg-bye-earth-red text-bye-white text-center w-full lg:flex lg:flex-row lg:text-left">
             <div class="image-container w-full flex flex-row justify-center items-center overflow-hidden lg:w-1/2">
-              <img src="/assets/img/catalog-grid.jpg" alt="" class="object-cover min-w-full min-h-full" />
+              <img src="/assets/img/catalog-grid.jpg" alt="" class="object-cover min-w-full min-h-full" loading="lazy" />
             </div>
             <div class="text-container flex flex-col justify-center items-center space-y-4 px-6 py-10 lg:w-1/2 lg:items-start lg:p-16 ">
               <h2 class="text-4xl">See the full collection in our catalogue</h2>
               <p class="hidden lg:block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="/catalogue-download" class="flex flex-row items-center justify-center hover:text-bye-taupe-50 group"
-                >Go to cataloge
+              <a href="/catalogue-download" class="flex flex-row items-center justify-center hover:text-bye-taupe-50 group uppercase"
+                >Download catalogue
                 <svg
                   class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
                   width="100%"
@@ -120,7 +120,7 @@ let description = "Check our most recent range of furniture and accessories. Ord
           <div class="container">
             <div class="flex flex-col lg:flex-row lg:flex-row-reverse">
               <div class="image-container lg:w-1/2 lg:flex flex-row justify-start items-center overflow-hidden">
-                <img src="/assets/img/home-bastiaan.jpg" alt="" class="min-w-full object-cover" />
+                <img src="/assets/img/home-bastiaan.jpg" alt="" class="min-w-full object-cover" loading="lazy" />
               </div>
               <div class="text-container space-y-4 py-6 lg:w-1/2 lg:space-y-reverse lg:flex lg:flex-col lg:justify-center lg:items-start lg:py-16 lg:pr-16">
                 <h2 class="text-4xl">Our story</h2>
@@ -129,7 +129,7 @@ let description = "Check our most recent range of furniture and accessories. Ord
                   possibilities. Combining his family’s extensive manufacturing experience and production facilities and his own design and economics background has laid the
                   foundation for ByE..
                 </p>
-                <a href="/our-story" class="flex flex-row items-center hover:text-bye-taupe-200 group"
+                <a href="/our-story" class="flex flex-row items-center hover:text-bye-taupe-200 group uppercase"
                   >Read all about it
                   <svg
                     class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"

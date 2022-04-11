@@ -1,5 +1,6 @@
 node_modules
 
-nav.astro
+nav-white.astro
+nav-black.astro
 
 tailwind.config.js

@@ -2,15 +2,16 @@
 import Header from "../components/Header.astro";
 import Catalogue from "../components/Catalog-comp.astro";
 import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
+import NavWhite from "../components/Nav-white.astro";
 
 let title = "By E | Modern shapes furniture and accessories ";
 let siteUrl = "https://www.by-elements.com";
 let siteTitle = "By E";
 let description = "A collection of furniture that you can buy and resell under your own brand. Indonesian craftmanship. ";
+let menuColor = "text-bye-white";
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -24,11 +25,11 @@ let description = "A collection of furniture that you can buy and resell under y
     <Header />
   </head>
   <body>
-    <Nav />
+    <NavWhite />
     <main class="w-full">
       <hero class="w-full h-screen relative flex flex-col justify-center items-center lg:flex-row">
         <div class="absolute h-full top-0 right-0 bottom-0 left-0 bg-bye-grey z-0 flex flex-row items-center justify-center overflow-hidden lg:relative lg:w-3/6">
-          <img src="/assets/img/home-hero.jpg" class="min-w-full min-h-full object-cover" alt="" />
+          <img src="/assets/img/home-hero.jpg" class="min-w-full min-h-full object-cover" alt="" loading="auto" />
         </div>
         <!-- /. Left side wrapper -->
 
@@ -47,7 +48,7 @@ let description = "A collection of furniture that you can buy and resell under y
                 <path d="M21.7142 15.238L15.9999 20.9523L10.2856 15.238" stroke="#665F52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> </path>
               </svg>
             </a>
-            <a href="/why-work-with-us" class="lg:flex lg:flex-row items-center hover:text-bye-taupe-200 group hidden lg:mt-6"
+            <a href="/why-work-with-us" class="lg:flex lg:flex-row items-center hover:text-bye-taupe-200 group hidden lg:mt-6 uppercase"
               >Why buy from us
               <svg
                 class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
@@ -96,7 +97,7 @@ let description = "A collection of furniture that you can buy and resell under y
               <div class="flex flex-col space-y-16 md:flex-row md:space-x-16 lg:w-1/2">
                 <div class="flex flex-col space-y-8">
                   <div class="flex flex-col justify-center items-center h-35v overflow-hidden aspect-[2/3]">
-                    <img src="/assets/img/home-chair.jpg" alt="" class="object-cover min-h-full min-w-full" />
+                    <img src="/assets/img/home-chair.jpg" alt="" class="object-cover min-h-full min-w-full" loading="lazy" />
                   </div>
                   <div class="px-6 space-y-4 md:px-0">
                     <h2>We are an international company: European origin based in Indonesia</h2>
@@ -111,7 +112,7 @@ let description = "A collection of furniture that you can buy and resell under y
                 <!-- /. first item  -->
                 <div class="flex flex-col space-y-8">
                   <div class="flex flex-col justify-start items-start h-35v overflow-hidden aspect-[2/3]">
-                    <img src="/assets/img/home-person.jpg" alt="" class="object-cover min-h-full min-w-full" />
+                    <img src="/assets/img/home-person.jpg" alt="" class="object-cover min-h-full min-w-full" loading="lazy" />
                   </div>
                   <div class="px-6 space-y-4 md:px-0">
                     <h2>Experience is what we’re known for</h2>
@@ -127,7 +128,7 @@ let description = "A collection of furniture that you can buy and resell under y
               <!-- /. left side -->
               <div class="flex flex-col space-y-6 lg:w-1/2 lg:pl-24">
                 <div class="flex flex-col  justify-center items-center h-35v overflow-hidden lg:h-auto">
-                  <img src="/assets/img/home-handcraft.jpg" alt="" />
+                  <img src="/assets/img/home-handcraft.jpg" alt="" loading="lazy" />
                 </div>
                 <div class="px-6 space-y-4 md:px-0">
                   <h2>Our production takes place in our Elements Factory</h2>
@@ -153,7 +154,7 @@ let description = "A collection of furniture that you can buy and resell under y
           <div class="container">
             <div class="flex flex-col lg:flex-row">
               <div class="image-container lg:w-1/2 lg:flex flex-row justify-start items-center overflow-hidden">
-                <img src="/assets/img/home-bastiaan.jpg" alt="" class="min-w-full object-cover" />
+                <img src="/assets/img/home-bastiaan.jpg" alt="" class="min-w-full object-cover" loading="lazy" />
               </div>
               <div class="text-container space-y-4 py-6 lg:w-1/2 lg:space-y-reverse lg:flex lg:flex-col lg:justify-center lg:items-start lg:p-16">
                 <h2>Our story</h2>
@@ -162,7 +163,7 @@ let description = "A collection of furniture that you can buy and resell under y
                   possibilities. Combining his family’s extensive manufacturing experience and production facilities and his own design and economics background has laid the
                   foundation for ByE..
                 </p>
-                <a href="/our-story" class="flex flex-row items-center hover:text-bye-taupe-200 group"
+                <a href="/our-story" class="flex flex-row items-center hover:text-bye-taupe-200 group uppercase"
                   >Read all about it
                   <svg
                     class="w-8 h-4 ml-2 group-hover:translate-x-2 ease-in-out duration-200"
@@ -184,7 +185,7 @@ let description = "A collection of furniture that you can buy and resell under y
 
       <section class="section-home-outro w-full m-auto">
         <div class="contain w-full flex flex-row justify-center items-center overflow-hidden h-25v max-h-48">
-          <img src="assets/img/home-rugs.jpg" alt="" class="min-w-full min-h-full object-cover" />
+          <img src="assets/img/home-rugs.jpg" alt="" class="min-w-full min-h-full object-cover" loading="lazy" />
         </div>
         <!-- /.container -->
       </section><!-- /. section-home-outro -->

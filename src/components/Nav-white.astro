@@ -1,8 +1,6 @@
 <nav class="absolute top-0" x-data="{navigationOpen: false}">
-      <div
-        class="absolute flex flex-col top-10 left-6 lg:left-12 z-50"
-      >
-        <div class="w-100 flex flex-row justify-between items-center">
+      <div class="absolute flex flex-col top-10 left-6 lg:left-12 z-50">
+        <div class="w-100 flex flex-row justify-between items-center text-bye-white">
         <a href="/">
           <svg
             class="h-12 w-auto"
@@ -42,7 +40,7 @@
         x-show="navigationOpen"
       ></div><!-- /. background opacity -->
       <div
-        class="h-screen w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 sm:left-auto sm:w-3/6 lg:w-2/6 md:drop-shadow"
+        class="sm:h-screen h-full w-screen bg-bye flex flex-col justify-center bg-bye-white fixed top-0 right-0 bottom-0 left-0 px-8 py-8 z-40 sm:left-auto sm:w-3/6 lg:w-2/6 md:drop-shadow"
         x-on:click="navigationOpen = false" 
         x-show="navigationOpen"
       >
