@@ -703,6 +703,10 @@ p, body {
   min-height: 100%;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -749,6 +753,10 @@ p, body {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-flow-row {
@@ -862,6 +870,10 @@ p, body {
   scroll-behavior: smooth;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .bg-bye-earth-red {
   --tw-bg-opacity: 1;
   background-color: rgb(48 20 11 / var(--tw-bg-opacity));
@@ -946,6 +958,11 @@ p, body {
   padding-bottom: 1.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -953,6 +970,10 @@ p, body {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .pr-6 {
@@ -1021,6 +1042,10 @@ p, body {
   opacity: 0.4;
 }
 
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
@@ -1055,16 +1080,11 @@ p, body {
   background-color: white;
   height: 48px;
   width: 48px;
-  border-radius: 99rem;
-  padding-top: 18px;
-  /* box-shadow:
-  0.1px 0.1px 0.3px rgba(0, 0, 0, 0.02),
-  0.3px 0.3px 0.7px rgba(0, 0, 0, 0.028),
-  0.5px 0.5px 1.3px rgba(0, 0, 0, 0.035),
-  0.9px 0.9px 2.2px rgba(0, 0, 0, 0.042),
-  1.7px 1.7px 4.2px rgba(0, 0, 0, 0.05),
-  4px 4px 10px rgba(0, 0, 0, 0.07)
-; */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 
 .hamburger:hover {
@@ -1073,6 +1093,10 @@ p, body {
 
 .hamburger.is-active:hover {
   opacity: 0.7;
+}
+
+.hamburger-box {
+  margin-top:-8px;
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -1304,12 +1328,12 @@ p, body {
     width: 33.333333%;
   }
 
-  .lg\:w-2\/5 {
-    width: 40%;
-  }
-
   .lg\:w-3\/5 {
     width: 60%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 
   .lg\:w-3\/6 {
