@@ -2,7 +2,6 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import NavWhite from "../components/Nav-white.astro";
-import SignUp from "../components/SignUp.astro";
 
 let title = "By E | Download our catalogue";
 let siteUrl = "https://www.by-elements.com/catalog-sub";
@@ -30,8 +29,10 @@ let description = "Download the ByE catalogue. See the full furniture collection
         <div class="image-container flex flex-row justify-center items-end object-cover h-25v w-full overflow-hidden lg:w-3/5 lg:h-65v">
           <img src="/assets/img/catalog-1.jpg" alt="" class="min-h-full min-w-full object-cover" />
         </div><!-- /. img wrap -->
-
-        <SignUp />
+        <div class="text-container flex flex-col space-y-4 px-6 py-10 lg:w-2/5 lg:px-16">
+          <h1 class="text-4xl">Thanks!</h1>
+          <p>You have received the catalogue in your mailbox</p>
+        </div>
       </hero>
       <!-- /. hero  -->
       <div class="main-wrapper space-y-20 my-20 max-w-screen-2xl mx-auto flex flex-col items-center justify-center w-full lg:space-y-32 lg:mb-32">
